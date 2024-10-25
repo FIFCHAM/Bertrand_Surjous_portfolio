@@ -1,0 +1,19 @@
+import Header from "../components/Header/Header.jsx";
+import Branding from "../components/Branding/Branding.jsx";
+import "./App.scss";
+function App() {
+  return (
+    <>
+      <Header />
+      <main>
+        <section className="branding">
+          <Branding />
+
+        </section>
+        <section className="about-me"></section>
+      </main>
+    </>
+  );
+}
+
+export default App;
