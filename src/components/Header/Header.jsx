@@ -1,18 +1,19 @@
 import "./Header.scss";
+import logobs from "../../assets/images/logobs.png";
 
 function Header() {
   return (
     <header>
       <nav>
-      <div>
-        <h1>Bertrand Surjous</h1>
-      </div>
+      <a href="#branding-container">
+      <img src={logobs} alt="logo bs" />
+      </a>
         <ul>
           <li>
-            <a href="">Accueil</a>
+            <a href="#branding-container">A propos</a>
           </li>
           <li>
-            <a href="">Profil</a>
+            <a href="#profil-container">Profil</a>
           </li>
           <li>
             <a href="">Compétences</a>

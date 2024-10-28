@@ -4,13 +4,14 @@
     align-items: center;
     width: 100%;
     //position: relative;
-    
+    text-align: center;
     height: 695px;
     background-image: url("../assets/images/backgroundmain.jpg");
 }
-.about-me {
+.profil {
     display: flex;
-    width: 100%;
-    height: 695px;
+    margin: 0px 200px 0px 200px;
+    color: white;
+    height: 100%;
     background-color: black;
 }

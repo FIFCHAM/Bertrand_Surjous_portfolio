@@ -1,5 +1,6 @@
 import Header from "../components/Header/Header.jsx";
 import Branding from "../components/Branding/Branding.jsx";
+import Profil from "../components/Profil/Profil.jsx";
 import "./App.scss";
 function App() {
   return (
@@ -8,9 +9,10 @@ function App() {
       <main>
         <section className="branding">
           <Branding />
-
         </section>
-        <section className="about-me"></section>
+        <section className="profil">
+          <Profil />
+        </section>
       </main>
     </>
   );
