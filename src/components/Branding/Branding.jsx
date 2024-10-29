@@ -6,7 +6,7 @@ function Branding() {
     
 
   return (
-    <div id="branding-container" className="branding-container">
+    <div  className="branding-container">
 
     <div className="animation-container">
         <p>Hello 👋 </p>
@@ -18,7 +18,7 @@ function Branding() {
         </div>
   <h1>Bertrand SURJOUS</h1>
   <h2>développeur web - intégrateur</h2>
-  <a href="#profil-container">Plus d&apos;infos</a>
+  <a href="#profil">Plus d&apos;infos</a>
 
     </div>
 

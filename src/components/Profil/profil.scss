@@ -19,15 +19,16 @@
         object-fit: cover;
     }
     p {
-        font-size: 20px;
+        font-size: 25px;
         text-shadow: .1em .1em .3em #6ec7e0;
         margin-bottom: 50px;
+        padding: 20px;
     }
 }
 
 @media  (max-width: 768px) {
     .profil-container {
-        margin: 0px 200px 0px 200px;
+        text-align: center;
         color: white;
         height: 100%;
     }

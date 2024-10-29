@@ -1,0 +1,64 @@
+$primary-color: #6ec7e0;
+$bg-color: #e0e0e0;
+$skill-height: 20px;
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+
+    h3 {
+        font-size: 50px;
+        text-shadow: .1em .1em .3em #6ec7e0;
+        margin-bottom: 50px;
+    }
+    button{
+        font-size: 25px;
+        background-color: transparent;
+        padding: 10px;
+        border: 2px solid #6ec7e0;
+        color: #6ec7e0;
+        text-decoration: none;
+        border-radius: 5px;
+        margin-top: 50px;
+    }
+    button:hover{
+        background-color: #6ec7e0;
+        color: white;
+        cursor: pointer;
+        transition: background-color 0.5s  ease-in-out;
+    }
+
+
+
+.skill {
+  margin-bottom: 25px;
+
+  .skill-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .skill-bar {
+    height: $skill-height;
+    width: 100%;
+    background-color: $bg-color;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    
+    .skill-bar-fill {
+      height: 100%;
+      width: 0;
+      background-color: $primary-color;
+      transition: width 2s ease; // Animation pour la progression de la barre
+    }
+  }
+}
+
+
+
+}

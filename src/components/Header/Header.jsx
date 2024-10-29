@@ -5,25 +5,25 @@ function Header() {
   return (
     <header>
       <nav>
-      <a href="#branding-container">
+      <a href="#branding">
       <img src={logobs} alt="logo bs" />
       </a>
         <ul>
           <li>
-            <a href="#branding-container">A propos</a>
+            <a href="#branding">A propos</a>
           </li>
           <li>
-            <a href="#profil-container">Profil</a>
+            <a href="#profil">Profil</a>
           </li>
           <li>
-            <a href="">Compétences</a>
+            <a href="#skills">Compétences</a>
           </li>
           <li>
-            <a href="">Portfolio</a>
+            <a href="#portfolio">Portfolio</a>
           </li>
 
           <li>
-            <a href="">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>
