@@ -1,30 +1,28 @@
 import "./skills.scss";
-import SkillBar from "./skillbar";
+import { Skillslogos } from "../../data/Skillslogos";
 
-const skillsData = [
-    { skill: "JavaScript", level: 70 },
-    { skill: "HTML", level: 90 },
-    { skill: "CSS / SCSS", level: 80 },
-    { skill: "React", level: 70 },
-    
-  ];
+
 function Skills() {
     const handlePdfClick = () => {
-        // Le chemin vers le fichier PDF dans le dossier public
         window.open(`/CV BERTRAND.pdf`, '_blank');
       };
-    return (
+
+      return (
+      
         <div className="skills-container">
             <h3>Compétences </h3>
-            <div className="skillbar-container">
-            {skillsData.map((skill, index) => (
-        <SkillBar key={index} skill={skill.skill} level={skill.level} />
-      ))}
-  </div>
-  <button onClick={handlePdfClick}>Télécharger mon CV</button>
-</div>
+            <div  className="skills-logo">
+              {Skillslogos.map((skill) => (
+                  <div key={skill.name} className="logo-container">
+                    <img src={skill.logo} alt={skill.name}  />
+                    <span>{skill.name}</span>
+                  </div>
+                  ))}
+            </div>
+                  <button onClick={handlePdfClick}>Télécharger mon CV</button>
+         </div>
 
             
     )
 }
-export default Skills;
+export default Skills

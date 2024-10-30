@@ -1,0 +1,58 @@
+
+.carousel-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+
+    h3 {
+        font-size: 50px;
+        text-shadow: .1em .1em .3em #6ec7e0;
+        margin-bottom: 30px;
+    }
+    p {
+        font-size: 35px;
+        text-shadow: .1em .1em .3em #6ec7e0;
+        margin-bottom: 40px;
+        padding: 20px;
+    }
+    .fa-chevron {
+        display: flex;
+        justify-content: space-between;
+        width: 95%;
+
+        i {
+            font-size: 50px;
+            color: white;
+            cursor: pointer;
+            transition: color 0.5s ease-in-out;
+        }
+
+        i:hover {
+            color: #6ec7e0;
+        }
+    }
+    .bullets {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    
+        .bullet {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #ccc;
+          margin: 0 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+    
+          &.active {
+            background-color: #333;
+          }
+        }
+      }
+    
+}
