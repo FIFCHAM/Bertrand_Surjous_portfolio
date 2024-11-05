@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
+@import '../../styles/_variables.scss';
 .branding-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: white;
+  color: $primary-color;
   .animation-container {
-  color: #6ec7e0;
+  color: $tertiary-color;
   font-size: 25px;
   font-family: 'Roboto';
   text-transform: uppercase;
@@ -55,18 +55,18 @@
 }
   h1{
     font-size: 50px;
-    text-shadow: .1em .1em .3em #6ec7e0;
+    text-shadow: .1em .1em .3em $tertiary-color;
   }
   h2{
     font-size: 30px;
-    text-shadow: .1em .1em .3em #6ec7e0;
+    text-shadow: .1em .1em .3em $tertiary-color;
   }
   a{
     font-size: 20px;
     background-color: transparent;
     padding: 10px;
-    border: 2px solid #6ec7e0;
-    color: #6ec7e0;
+    border: 2px solid $tertiary-color;
+    color: $tertiary-color;
     text-decoration: none;
     border-radius: 5px;
   }

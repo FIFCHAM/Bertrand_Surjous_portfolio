@@ -1,14 +1,15 @@
+@import '../../styles/_variables.scss';
 .profil-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: white;
+    color: $primary-color;
 
     h3 {
         font-size: 50px;
-        text-shadow: .1em .1em .3em #6ec7e0;
+        text-shadow: .1em .1em .3em $tertiary-color;
         margin-bottom: 50px;
     }
     img {
@@ -20,7 +21,7 @@
     }
     p {
         font-size: 25px;
-        text-shadow: .1em .1em .3em #6ec7e0;
+        text-shadow: .1em .1em .3em $tertiary-color;
         margin-bottom: 50px;
         padding: 20px;
     }

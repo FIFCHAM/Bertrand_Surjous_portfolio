@@ -1,14 +1,15 @@
+@import '../../styles/_variables.scss';
 .skills-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  color: white;
+  color: $primary-color;
 
   h3 {
     font-size: 50px;
-    text-shadow: .1em .1em .3em #6ec7e0;
+    text-shadow: .1em .1em .3em $tertiary-color;
     margin-bottom: 50px;
   }
 
@@ -16,8 +17,8 @@
     font-size: 25px;
     background-color: transparent;
     padding: 10px;
-    border: 2px solid #6ec7e0;
-    color: #6ec7e0;
+    border: 2px solid $tertiary-color;
+    color:$tertiary-color;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 50px;
@@ -25,8 +26,8 @@
   }
 
   button:hover {
-    background-color: #6ec7e0;
-    color: white;
+    background-color: $tertiary-color;
+    color: $primary-color;
     cursor: pointer;
     transition: background-color 0.5s ease-in-out;
   }
@@ -36,11 +37,11 @@
     width: 50%;
     flex-direction: row;
     justify-content: center;
-    background-color: #6ec7e0;
+    background-color: $tertiary-color;
     padding: 40px;
     gap: 60px;
     font-family: sans-serif;
-    color:black;
+    color:$secondary-color;
     font-size: 20px;
     @media  (max-width: 768px) {
       flex-direction:column;

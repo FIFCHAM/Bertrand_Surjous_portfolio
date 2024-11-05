@@ -1,21 +1,23 @@
-
+@import '../../styles/_variables.scss';
 .carousel-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
-    color: white;
+    color: $primary-color;
+    margin-top: 50px;
 
-    h3 {
-        font-size: 50px;
-        text-shadow: .1em .1em .3em #6ec7e0;
-        margin-bottom: 30px;
-    }
     p {
+        font-size: 50px;
+        text-shadow: .1em .1em .3em $tertiary-color;
+        margin: 0;
+    }
+    p:first-child {
         font-size: 35px;
-        text-shadow: .1em .1em .3em #6ec7e0;
-        margin-bottom: 40px;
+        text-shadow: .1em .1em .3em $tertiary-color;
+        margin: 0;
+        margin-bottom: 20px;
         padding: 20px;
     }
     .fa-chevron {
@@ -24,14 +26,14 @@
         width: 95%;
 
         i {
-            font-size: 50px;
-            color: white;
+            font-size: 40px;
+            color: $primary-color;
             cursor: pointer;
             transition: color 0.5s ease-in-out;
         }
 
         i:hover {
-            color: #6ec7e0;
+            color: $tertiary-color;
         }
     }
     .bullets {
@@ -44,13 +46,13 @@
           width: 10px;
           height: 10px;
           border-radius: 50%;
-          background-color: #ccc;
+          background-color: $secondary-color;
           margin: 0 5px;
           cursor: pointer;
           transition: background-color 0.3s;
     
           &.active {
-            background-color: #333;
+            background-color: $primary-color;
           }
         }
       }

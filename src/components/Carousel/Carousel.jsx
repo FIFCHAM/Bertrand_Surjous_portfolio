@@ -30,7 +30,7 @@ function Carousel() {
       <i className="fas fa-chevron-right" onClick={handleNext}></i>
 
         </div>
-      <h3>{Famousquotes[currentIndex].author}</h3>
+      <p>{Famousquotes[currentIndex].author}</p>
       <div className="bullets">
         {Famousquotes.map((_, index) => (
           <span

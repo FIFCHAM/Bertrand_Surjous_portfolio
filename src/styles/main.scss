@@ -1,8 +1,9 @@
+@import './variables.scss';
 *{
     scroll-behavior: smooth;
 }
 body {
-    background-color: black;
+    background-color: $secondary-color;
     margin: 0;
     min-width: 320px;
     min-height: 100vh;
