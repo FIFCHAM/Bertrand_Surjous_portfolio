@@ -1,0 +1,41 @@
+Header {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  background-color: black;
+  box-shadow: 0px 9px 15px #6ec7e0;
+}
+Header nav {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+}
+Header nav ul {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+Header nav ul li {
+  list-style: none;
+}
+Header nav ul li a {
+  text-decoration: none;
+  font-family: fantasy;
+  font-size: 20px;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    background-color: black;
+    position: relative;
+  }
+  nav {
+    flex-direction: column;
+  }
+  ul {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,53 @@
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+  margin-top: 50px;
+}
+.carousel-container p {
+  font-size: 50px;
+  text-shadow: 0.1em 0.1em 0.3em #6ec7e0;
+  margin: 0;
+}
+.carousel-container p:first-child {
+  font-size: 35px;
+  text-shadow: 0.1em 0.1em 0.3em #6ec7e0;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.carousel-container .fa-chevron {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+}
+.carousel-container .fa-chevron i {
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+.carousel-container .fa-chevron i:hover {
+  color: #6ec7e0;
+}
+.carousel-container .bullets {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.carousel-container .bullets .bullet {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: black;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.carousel-container .bullets .bullet.active {
+  background-color: white;
+}/*# sourceMappingURL=carousel.css.map */

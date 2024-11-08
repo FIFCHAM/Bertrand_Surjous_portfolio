@@ -1,0 +1,57 @@
+.skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+.skills-container h3 {
+  font-size: 50px;
+  text-shadow: 0.1em 0.1em 0.3em #6ec7e0;
+  margin-bottom: 50px;
+}
+.skills-container button {
+  font-size: 25px;
+  background-color: transparent;
+  padding: 10px;
+  border: 2px solid #6ec7e0;
+  color: #6ec7e0;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.skills-container button:hover {
+  background-color: #6ec7e0;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+}
+.skills-container .skills-logo {
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #6ec7e0;
+  padding: 40px;
+  gap: 60px;
+  font-family: sans-serif;
+  color: black;
+  font-size: 20px;
+}
+@media (max-width: 768px) {
+  .skills-container .skills-logo {
+    flex-direction: column;
+  }
+}
+.skills-container .skills-logo .logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.skills-container .skills-logo .logo-container img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 20px;
+}/*# sourceMappingURL=skills.css.map */

@@ -1,0 +1,59 @@
+.portfolio-card {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  .portfolio-card {
+    flex-direction: column;
+  }
+}
+.portfolio-card .portfolio-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 500px;
+  margin-bottom: 50px;
+  color: white;
+}
+.portfolio-card .portfolio-card-container h4 {
+  font-size: 25px;
+  text-shadow: 0.1em 0.1em 0.3em #6ec7e0;
+  margin-bottom: 20px;
+}
+.portfolio-card .portfolio-card-container p {
+  font-size: 20px;
+  text-shadow: 0.1em 0.1em 0.3em #6ec7e0;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px;
+}
+.portfolio-card .portfolio-card-container .portfolio-image {
+  width: 90%;
+  height: 50%;
+  box-shadow: 0.3em 0.3em 0.3em #6ec7e0;
+}
+.portfolio-card .porfolio-skilllogos {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: black;
+}
+@media screen and (max-width: 768px) {
+  .portfolio-card .porfolio-skilllogos {
+    flex-direction: column;
+  }
+}
+.portfolio-card .porfolio-skilllogos img {
+  background-color: #6ec7e0;
+  width: 50px;
+  height: 50px;
+  box-shadow: 0.3em 0.3em 0.3em #6ec7e0;
+}/*# sourceMappingURL=portfolio.css.map */

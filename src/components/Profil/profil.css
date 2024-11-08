@@ -1,0 +1,27 @@
+.profil-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+.profil-container h3 {
+  font-size: 50px;
+  text-shadow: 0.1em 0.1em 0.3em #6ec7e0;
+  margin-bottom: 50px;
+}
+.profil-container img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.profil-container p {
+  font-size: 25px;
+  text-shadow: 0.1em 0.1em 0.3em #6ec7e0;
+  margin-bottom: 50px;
+  padding: 20px;
+}/*# sourceMappingURL=profil.css.map */

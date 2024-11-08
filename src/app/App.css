@@ -1,0 +1,65 @@
+.branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  height: 695px;
+  background-image: url("../assets/images/backgroundmain.jpg");
+}
+
+.profil {
+  display: flex;
+  margin: 0px 200px 0px 200px;
+  color: white;
+  height: 100%;
+  background-color: black;
+}
+@media screen and (max-width: 768px) {
+  .profil {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+  }
+}
+
+.status {
+  display: flex;
+  background-attachment: fixed;
+  background-position: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: url("../assets/images/background-with-blue-neon-lights.jpg");
+}
+
+.skillbar-container {
+  width: 50%;
+  margin: 20px auto;
+}
+
+.carousel {
+  display: flex;
+  background-attachment: fixed;
+  background-position: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: url("../assets/images/background-with-blue-neon-lights.jpg");
+}
+
+.porfolio {
+  display: flex;
+}
+.porfolio .portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+.porfolio .portfolio-container h3 {
+  font-size: 50px;
+  text-shadow: 0.1em 0.1em 0.3em #6ec7e0;
+  margin-bottom: 40px;
+}/*# sourceMappingURL=App.css.map */
