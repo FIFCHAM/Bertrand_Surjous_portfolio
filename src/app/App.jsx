@@ -6,6 +6,7 @@ import Skills from "../components/Skills/Skills.jsx";
 import Portfolio from "../components/Portfolio/Portfolio.jsx";
 import Carousel from "../components/Carousel/Carousel.jsx";
 import { Porfoliocards } from "../data/Porfoliocards";
+import Contact from "../components/Contact/Contact.jsx";
 import "./App.scss";
 function App() {
   return (
@@ -43,6 +44,9 @@ function App() {
           ))}
           </div>
           </div>
+        </section>
+        <section id="contact" className="contact">
+          <Contact />
         </section>
       </main>
     </>

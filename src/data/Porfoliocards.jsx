@@ -19,11 +19,11 @@ export const Porfoliocards = [
     links:[
       {
         title:"lien github",
-        link:"https://github.com/glenn2223/portfolio-bs"
+        link:"https://github.com/FIFCHAM/Projet_openclassrooms_Omyfood"
       },
       {
         title:"site ohmyfood",
-        link:""
+        link:"https://fifcham.github.io/Projet_openclassrooms_Omyfood/"
       }
     ],
 
@@ -41,7 +41,7 @@ export const Porfoliocards = [
     links:[
       {
         title:"lien github",
-        link:"https://github.com/glenn2223/portfolio-bs"
+        link:"https://github.com/FIFCHAM/Projet_openclassrooms_Sophie_bluel"
       },
       {
         title:"site Sophie Bluel",
@@ -66,7 +66,7 @@ export const Porfoliocards = [
     links:[
       {
         title:"lien github",
-        link:"https://github.com/glenn2223/portfolio-bs"
+        link:"https://github.com/FIFCHAM/Projet_openclassrooms_kaza"
       },
       {
         title:"site kasa",

@@ -1,12 +1,11 @@
 @import '../../styles/_variables.scss';
-.status-container {
+.contact-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
     color: $primary-color;
-
     h3 {
         font-size: 50px;
         text-shadow: .1em .1em .3em $tertiary-color;

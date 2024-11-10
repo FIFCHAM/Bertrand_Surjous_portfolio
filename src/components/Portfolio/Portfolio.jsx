@@ -15,7 +15,7 @@ function Portfolio({ title, description, logos, image ,links}) {
           </div>
           <div className="portfolio-links">
             {links.map((link, index) => (
-              <a key={index} href={link.link}>{link.title}</a>
+              <a key={index} target="blank" href={link.link}>{link.title}</a>
             ))}
           </div>
         </div>
