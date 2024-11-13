@@ -60,7 +60,6 @@
 
     h3 {
       font-size: 50px;
-      text-shadow: 0.1em 0.1em 0.3em $tertiary-color;
       margin-bottom: 40px;
     }
 }
@@ -68,11 +67,26 @@
     display: flex;
     gap: 20px;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     width: 90%;
     color: $primary-color;
     @media screen and (max-width: 768px) {
       flex-direction: column;
       
     }
+  }
+  .contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: $primary-color;
+    h3 {
+      font-size: 50px;
+      margin-bottom: 40px;
+    }
+    p{
+      font-size: 20px;
+  }
   }

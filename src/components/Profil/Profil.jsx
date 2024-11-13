@@ -4,14 +4,16 @@ import photobs from "../../assets/images/WIN_20240312_11_02_30_Pro.jpg";
 function Profil() {
   return (
     <div  className="profil-container">
-        <h3>A propos de moi</h3>
+        <h3>À propos de moi</h3>
 
         <img src={photobs} alt="photo bs"  />
         <p>
 
 
+Fort d&apos;une solide expérience de 30 ans dans le commerce, j&apos;ai choisi de me tourner vers ma passion pour les nouvelles technologies en me reconvertissant dans le développement web front-end.<br /> Ma formation de 9 mois avec Openclassrooms (2023-2024) m&apos;a permis d&apos;acquérir les compétences nécessaires pour intégrer une équipe dynamique et contribuer à des projets stimulants.<br/>  Curieux, logique et pragmatique, je suis déterminé à  perfectionner mes compétences et à apporter une valeur ajoutée à chaque projet. 
 
-Fort d&apos;une expérience de près de 30 ans dans le commerce et mû par une passion pour les nouvelles technologies, je me suis reconverti avec succès dans le développement web front-end. Mon parcours atypique témoigne de ma détermination et de ma capacité d&apos;adaptation. Curieux, logique et pragmatique, je suis désireux d&apos;intégrer une équipe dynamique où je pourrai perfectionner mes compétences techniques et contribuer à des projets stimulants.
+
+
 </p>
 
     </div>

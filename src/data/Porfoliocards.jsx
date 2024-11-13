@@ -43,10 +43,7 @@ export const Porfoliocards = [
         title:"lien github",
         link:"https://github.com/FIFCHAM/Projet_openclassrooms_Sophie_bluel"
       },
-      {
-        title:"site Sophie Bluel",
-        link:""
-      }
+      
     ],
   },   
     
@@ -70,7 +67,7 @@ export const Porfoliocards = [
       },
       {
         title:"site kasa",
-        link:""
+        link:"https://kaza-three.vercel.app/"
       }
     ],
     

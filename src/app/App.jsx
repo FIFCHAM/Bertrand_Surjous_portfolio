@@ -8,6 +8,7 @@ import Carousel from "../components/Carousel/Carousel.jsx";
 import { Porfoliocards } from "../data/Porfoliocards";
 import Contact from "../components/Contact/Contact.jsx";
 import "./App.scss";
+import Footer from "../components/Footer/Footer.jsx";
 function App() {
   return (
     <>
@@ -46,7 +47,13 @@ function App() {
           </div>
         </section>
         <section id="contact" className="contact">
+        <h3>Contactez-moi</h3>
+        <p>Je vous répondrai dans les plus brefs délais.</p>
+
           <Contact />
+        </section>
+        <section id="footer" className="footer">
+          <Footer />
         </section>
       </main>
     </>
