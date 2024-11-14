@@ -9,14 +9,15 @@
     margin-top: 50px;
 
     p {
-        font-size: 50px;
+        font-size: 45px;
         margin: 0;
+        align-items: center;
     }
     p:first-child {
         font-size: 35px;
         margin: 0;
         margin-bottom: 20px;
-        padding: 20px;
+        text-align: center;
     }
     .fa-chevron {
         display: flex;

@@ -6,8 +6,8 @@
     width: 100%;
     //position: relative;
     text-align: center;
-    height: 695px;
-    background-image: url("../assets/images/backgroundmain.jpg");
+    height: 600px;
+    background-image: url("../assets/images/backgroundmain 2.webp");
 }
 .profil {
     display: flex;
@@ -28,7 +28,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-image: url("../assets/images/background-with-blue-neon-lights.jpg");
+    background-image: url("../assets/images/background-with-blue-neon-lights2.webp");
 }
 
 .skillbar-container {
@@ -42,7 +42,7 @@
     align-items: center;
     justify-content: center;
     height: 100%;
-    background-image: url("../assets/images/background-with-blue-neon-lights.jpg");
+    background-image: url("../assets/images/background-with-blue-neon-lights2.webp");
   }
   .porfolio {
     display: flex;
@@ -59,7 +59,7 @@
     
 
     h3 {
-      font-size: 50px;
+      font-size: 45px;
       margin-bottom: 40px;
     }
 }
@@ -83,10 +83,15 @@
     width: 100%;
     color: $primary-color;
     h3 {
-      font-size: 50px;
+      font-size: 45px;
       margin-bottom: 40px;
     }
     p{
       font-size: 20px;
+      text-align: center;
   }
+  }
+  .footer{
+    
+    margin-top: 50px;
   }

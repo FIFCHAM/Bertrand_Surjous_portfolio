@@ -26,18 +26,16 @@ function Carousel() {
     <div className="carousel-container">
         <p>{Famousquotes[currentIndex].text}</p>
         <div className="fa-chevron">
-      <i className="fas fa-chevron-left" onClick={handlePrev}></i>
-      <i className="fas fa-chevron-right" onClick={handleNext}></i>
+      <i className="fas fa-chevron-left" onClick={handlePrev} />
+      <i className="fas fa-chevron-right" onClick={handleNext} />
 
         </div>
       <p>{Famousquotes[currentIndex].author}</p>
       <div className="bullets">
         {Famousquotes.map((_, index) => (
-          <span
-            key={index}
-            className={`bullet ${index === currentIndex ? "active" : ""}`}
-            onClick={() => handleBulletClick(index)}
-          ></span>
+          <span key={index}
+          className={`bullet ${index === currentIndex ? "active" : ""}`}
+          onClick={() => handleBulletClick(index)} />
         ))}
       </div>
         </div>

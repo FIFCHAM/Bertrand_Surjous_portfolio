@@ -1,28 +1,35 @@
 import "./footer.scss";
-import githublogo from '../../assets/images/github-brands-solid.svg'
-import linkedinlogo from '../../assets/images/linkedin-brands-solid.svg' ;
+import githublogo from '../../assets/images/github.webp'
+import linkedinlogo from '../../assets/images/linkedin.webp' ;
+import logosbs from '../../assets/images/logobs.png';
 
 
 function Footer() {
   return (
     <footer className="footer-container">
+        <h4>Réseaux sociaux</h4>
       <div className="footer-content">
-        <h3>Réseaux sociaux</h3>
         
         
-          <a href="https://github.com/FIFCHAM">
+          <a href="https://github.com/FIFCHAM" target="blank">
           <img src={githublogo} alt="github-logo"  />
           </a>
         
         
-          <a href="https://www.linkedin.com/in/fifcham/">
+          <a href="https://www.linkedin.com/in/bertrand-surjous-78b2452ab" target="blank">
           <img src={linkedinlogo} alt="linkedin-logo"  />
           </a>
         
       </div>
-      <div className="footer-content">
-        <h3>© 2023 Copyright</h3>
+      <div className="footer-info">
+        <p>Tous droits réservés © 2024</p>
+        <a href="#branding">
+
+        <img src={logosbs} alt="logosbs" />
+        </a>
+
       </div>
+      
       </footer>
       );
 }

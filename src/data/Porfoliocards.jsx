@@ -1,10 +1,10 @@
 import sophiebuelimg from "../assets/images/sophiebuelxl.png";
 import omyfoodimg from "../assets/images/ohmyfoodxl.png";
 import kasaimg from "../assets/images/kasaxl.png";
-import javascriptlogo from "../assets/images/java-script_721671.png";
-import reactlogo from "../assets/images/atom_9791305.png";
-import htmllogo from "../assets/images/html_1051328.png";
-import csslogo from "../assets/images/css-3_732007.png";
+import javascriptlogo from "../assets/images/js.webp";
+import reactlogo from "../assets/images/atom_9791305.webp";
+import htmllogo from "../assets/images/html.webp";
+import csslogo from "../assets/images/css.webp";
 export const Porfoliocards = [
   {
     title: "ohmyfood",

@@ -10,7 +10,7 @@ function Portfolio({ title, description, logos, image ,links}) {
           <p>{description}</p>
           <div className="porfolio-skilllogos">
             {logos.map((logos, index) => (
-              <img key={index} src={logos} />
+              <img key={index} src={logos} alt="logos" />
             ))}
           </div>
           <div className="portfolio-links">

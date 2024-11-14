@@ -2,37 +2,41 @@
 .footer-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     background-color: $secondary-color;
-    padding: 20px;
+    margin-bottom: 20px;
+    h4 {
+        font-size: 30px;
+        color: $primary-color;
+        margin-bottom: 40px;
+    }
 }
     .footer-content {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 30px;
 
-        h3 {
-            font-size: 20px;
-            color: $primary-color;
-            margin: 0;
-        }
         img{
-            width: 20px;
-            height: 20px;
-            color: $primary-color;
+            width: 30px;
+            height: 30px;
+            background-color: $primary-color;
         }
 
         
             a {
-                color: $primary-color;
                 text-decoration: none;
-                transition: color 0.3s ease-in-out;
-                &:hover {
-                    color: $tertiary-color;
+                }
+            }
+            .footer-info {
+                display: flex;
+                
+                align-items: center;
+                gap: 30px;
+                p {
+                    font-size: 20px;
+                    color: $primary-color;
                 }
             }
         
-    }
+    

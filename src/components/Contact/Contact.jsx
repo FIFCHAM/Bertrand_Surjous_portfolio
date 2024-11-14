@@ -37,16 +37,16 @@ function Contact() {
     <form onSubmit={handleSubmit} className="contact-form">
       
       <div className="form-group">
-        <label htmlFor="" >Nom</label>
+        <label htmlFor="name" >Nom</label>
         <input type="text" name="name" value={formData.name} onChange={handleChange} placeholder="" required/>
       </div>
       
       <div className="form-group">
-        <label htmlFor=""> Email</label>
+        <label htmlFor="email"> Email</label>
         <input type="email" name="email" value={formData.email} onChange={handleChange} placeholder="" required/>
       </div>
       <div className="form-group">
-        <label htmlFor=""> Message</label>
+        <label htmlFor="message"> Message</label>
         <textarea name="message" value={formData.message} onChange={handleChange} placeholder="" required/>
       </div>
       <button type="submit">Envoyer</button>
