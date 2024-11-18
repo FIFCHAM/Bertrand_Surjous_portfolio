@@ -1,5 +1,5 @@
 import "./profil.scss";
-import photobs from "../../assets/images/WIN_20240312_11_02_30_Pro.jpg";
+import photobs from "../../assets/images/porfolio_img_profil.webp";
 
 function Profil() {
   return (
