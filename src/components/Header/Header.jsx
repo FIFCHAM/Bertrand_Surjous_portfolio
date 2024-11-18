@@ -1,5 +1,5 @@
 import "./Header.scss";
-import logobs from "../../assets/images/logobs.png";
+import logobs from "../../assets/images/logobs.webp";
 
 
 function Header() {

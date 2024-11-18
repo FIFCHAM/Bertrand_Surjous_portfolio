@@ -1,7 +1,7 @@
 import "./footer.scss";
 import githublogo from '../../assets/images/github.webp'
 import linkedinlogo from '../../assets/images/linkedin.webp' ;
-import logosbs from '../../assets/images/logobs.png';
+import logosbs from '../../assets/images/logobs.webp' ;
 
 
 function Footer() {

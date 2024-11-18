@@ -1,4 +1,4 @@
-import "./Profil.scss";
+import "./profil.scss";
 import photobs from "../../assets/images/WIN_20240312_11_02_30_Pro.jpg";
 
 function Profil() {
