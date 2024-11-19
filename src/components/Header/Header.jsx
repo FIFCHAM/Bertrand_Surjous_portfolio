@@ -1,14 +1,13 @@
 import "./Header.scss";
 import logobs from "../../assets/images/logobs.webp";
 
-
 function Header() {
   return (
     <header>
       <nav>
-      <a href="#branding">
-      <img src={logobs} alt="logo bs" />
-      </a>
+        <a href="#branding">
+          <img src={logobs} alt="logo bs" />
+        </a>
         <ul>
           <li>
             <a href="#branding">À propos</a>

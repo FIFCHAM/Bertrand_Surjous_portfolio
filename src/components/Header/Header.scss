@@ -1,18 +1,19 @@
 @import '../../styles/_variables.scss';
+
 Header {
     position: fixed;
-    
+
     display: flex;
     width: 100%;
     background-color: $secondary-color;
 
-        nav {
+    nav {
         display: flex;
         justify-content: space-around;
         width: 100%;
         align-items: center;
 
-        
+
 
         ul {
             display: flex;
@@ -21,13 +22,15 @@ Header {
 
             li {
                 list-style: none;
+
                 a {
                     text-decoration: none;
                     font-size: 20px;
                     color: $primary-color;
                     cursor: pointer;
                 }
-                a:hover{
+
+                a:hover {
                     color: $tertiary-color;
                 }
             }
@@ -35,18 +38,21 @@ Header {
     }
 
 }
-   @media  (max-width: 560px) {
-        header {
-            margin-top: 10px;
-            background-color: $secondary-color;
-            position: relative;
-        }
-        nav {
-            
-            flex-direction: column;
-            
-        }
-        ul {
-            flex-direction: column;
-        }
+
+@media (max-width: 560px) {
+    header {
+        margin-top: 10px;
+        background-color: $secondary-color;
+        position: relative;
     }
+
+    nav {
+
+        flex-direction: column;
+
+    }
+
+    ul {
+        flex-direction: column;
+    }
+}

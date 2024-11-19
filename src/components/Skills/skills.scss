@@ -1,4 +1,5 @@
 @import '../../styles/_variables.scss';
+
 .skills-container {
   display: flex;
   flex-direction: column;
@@ -17,7 +18,7 @@
     background-color: transparent;
     padding: 10px;
     border: 2px solid $tertiary-color;
-    color:$tertiary-color;
+    color: $tertiary-color;
     text-decoration: none;
     border-radius: 5px;
     margin-top: 50px;
@@ -40,10 +41,11 @@
     padding: 40px;
     gap: 60px;
     font-family: sans-serif;
-    color:$secondary-color;
+    color: $secondary-color;
     font-size: 20px;
-    @media  (max-width: 768px) {
-      flex-direction:column;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
     }
 
     .logo-container {
@@ -56,11 +58,8 @@
         width: 100px;
         height: 100px;
         margin-bottom: 20px;
-        
+
       }
     }
   }
 }
-
-
-

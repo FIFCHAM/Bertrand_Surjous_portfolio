@@ -1,4 +1,5 @@
 @import '../../styles/_variables.scss';
+
 .carousel-container {
     display: flex;
     flex-direction: column;
@@ -7,18 +8,20 @@
     width: 100%;
     color: $primary-color;
     margin-top: 50px;
-    
+
     p {
         font-size: 45px;
         margin: 0;
         align-items: center;
     }
+
     p:first-child {
         font-size: 35px;
         margin: 0;
         margin-bottom: 20px;
         text-align: center;
     }
+
     .fa-chevron {
         display: flex;
         justify-content: space-between;
@@ -35,25 +38,26 @@
             color: $tertiary-color;
         }
     }
+
     .bullets {
         display: flex;
         justify-content: center;
         margin-top: 15px;
         margin-bottom: 50px;
-    
+
         .bullet {
-          width: 10px;
-          height: 10px;
-          border-radius: 50%;
-          background-color: $secondary-color;
-          margin: 0 5px;
-          cursor: pointer;
-          transition: background-color 0.3s;
-    
-          &.active {
-            background-color: $primary-color;
-          }
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $secondary-color;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+
+            &.active {
+                background-color: $primary-color;
+            }
         }
-      }
-    
+    }
+
 }

@@ -11,22 +11,17 @@ export const Porfoliocards = [
     description:
       "Développez un site “mobile first” qui répertorie les menus de restaurants gastronomiques.",
     image: omyfoodimg,
-    logos:[
-         htmllogo,
-         csslogo,
-
-    ],
-    links:[
+    logos: [htmllogo, csslogo],
+    links: [
       {
-        title:"lien github",
-        link:"https://github.com/FIFCHAM/Projet_openclassrooms_Omyfood"
+        title: "lien github",
+        link: "https://github.com/FIFCHAM/Projet_openclassrooms_Omyfood",
       },
       {
-        title:"site ohmyfood",
-        link:"https://fifcham.github.io/Projet_openclassrooms_Omyfood/"
-      }
+        title: "site ohmyfood",
+        link: "https://fifcham.github.io/Projet_openclassrooms_Omyfood/",
+      },
     ],
-
   },
 
   {
@@ -34,42 +29,30 @@ export const Porfoliocards = [
     description:
       "Créez une page web dynamique avec JavaScript et en communiquant avec une API.",
     image: sophiebuelimg,
-    logos:[
-         javascriptlogo,
-
-    ],
-    links:[
+    logos: [javascriptlogo],
+    links: [
       {
-        title:"lien github",
-        link:"https://github.com/FIFCHAM/Projet_openclassrooms_Sophie_bluel"
+        title: "lien github",
+        link: "https://github.com/FIFCHAM/Projet_openclassrooms_Sophie_bluel",
       },
-      
     ],
-  },   
-    
-     
-    
-  
+  },
+
   {
     title: "Kasa",
     description:
       "Créez une application web de location immobilière avec React.",
     image: kasaimg,
-    logos:[
-         
-         reactlogo,
-
-    ],
-    links:[
+    logos: [reactlogo],
+    links: [
       {
-        title:"lien github",
-        link:"https://github.com/FIFCHAM/Projet_openclassrooms_kaza"
+        title: "lien github",
+        link: "https://github.com/FIFCHAM/Projet_openclassrooms_kaza",
       },
       {
-        title:"site kasa",
-        link:"https://kaza-three.vercel.app/"
-      }
+        title: "site kasa",
+        link: "https://kaza-three.vercel.app/",
+      },
     ],
-    
   },
 ];

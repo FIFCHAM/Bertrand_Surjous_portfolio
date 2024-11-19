@@ -1,97 +1,110 @@
 @import '../styles/variables.scss';
+
 .branding {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    //position: relative;
-    text-align: center;
-    height: 600px;
-    background-image: url("../assets/images/backgroundmain 2.webp");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  //position: relative;
+  text-align: center;
+  height: 600px;
+  background-image: url("../assets/images/backgroundmain 2.webp");
 }
+
 .profil {
-    display: flex;
-    margin: 0px 200px 0px 200px;
-    color: $primary-color;
-    height: 100%;
-    background-color: $secondary-color;
-    @media screen and (max-width: 768px) {
-        margin: 0px 0px 0px 0px;
-        text-align: center;
-        
-    }
+  display: flex;
+  margin: 0px 200px 0px 200px;
+  color: $primary-color;
+  height: 100%;
+  background-color: $secondary-color;
+
+  @media screen and (max-width: 768px) {
+    margin: 0px 0px 0px 0px;
+    text-align: center;
+
+  }
 }
+
 .status {
-    display: flex;
-    background-attachment: fixed;
-    background-position: 50%;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background-image: url("../assets/images/background-with-blue-neon-lights2.webp");
+  display: flex;
+  background-attachment: fixed;
+  background-position: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: url("../assets/images/background-with-blue-neon-lights2.webp");
 }
 
 .skillbar-container {
-    width: 50%;
-    margin: 20px auto;
-  }
-  .carousel {
-    display: flex;
-    background-attachment: fixed;
-    background-position: 50%;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    background-image: url("../assets/images/background-with-blue-neon-lights2.webp");
-  }
-  .porfolio {
-    display: flex;
-    
-    
+  width: 50%;
+  margin: 20px auto;
 }
-.portfolio-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: $primary-color;
-    
 
-    h3 {
-      font-size: 45px;
-      margin-bottom: 40px;
-    }
+.carousel {
+  display: flex;
+  background-attachment: fixed;
+  background-position: 50%;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-image: url("../assets/images/background-with-blue-neon-lights2.webp");
 }
+
+.porfolio {
+  display: flex;
+
+
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: $primary-color;
+
+
+  h3 {
+    font-size: 45px;
+    margin-bottom: 40px;
+  }
+}
+
 .portfolio-card {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: flex-start;
-    width: 90%;
-    color: $primary-color;
-    @media screen and (max-width: 768px) {
-      flex-direction: column;
-      
-    }
-  }
-  .contact{
-    display: flex;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  width: 90%;
+  color: $primary-color;
+
+  @media screen and (max-width: 768px) {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: $primary-color;
-    h3 {
-      font-size: 45px;
-      margin-bottom: 40px;
-    }
-    p{
-      font-size: 20px;
-      text-align: center;
+
   }
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: $primary-color;
+
+  h3 {
+    font-size: 45px;
+    margin-bottom: 40px;
   }
-  .footer{
-    
-    margin-top: 50px;
+
+  p {
+    font-size: 20px;
+    text-align: center;
   }
+}
+
+.footer {
+
+  margin-top: 50px;
+}

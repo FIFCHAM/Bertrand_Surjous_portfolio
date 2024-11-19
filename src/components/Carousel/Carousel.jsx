@@ -17,7 +17,6 @@ function Carousel() {
       prevIndex === Famousquotes.length - 1 ? 0 : prevIndex + 1
     );
   };
- 
 
   // Fonction pour sélectionner une citation avec les bullets
   const handleBulletClick = (index) => {

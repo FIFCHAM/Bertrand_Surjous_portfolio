@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 @import '../../styles/_variables.scss';
+
 .branding-container {
   display: flex;
   flex-direction: column;
@@ -7,59 +8,63 @@
   align-items: center;
   width: 100%;
   color: $primary-color;
+
   .animation-container {
-  color: $tertiary-color;
-  font-size: 25px;
-  font-family: 'Roboto';
-  text-transform: uppercase;
-  display: flex;
+    color: $tertiary-color;
+    font-size: 25px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    display: flex;
 
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 
-  p {
-    text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+    p {
+      text-shadow: 0 0 7px rgba(255, 255, 255, .3), 0 0 3px rgba(255, 255, 255, .3);
+    }
+
+
+    .branding-animation {
+      height: 40px;
+      overflow: hidden;
+      margin-left: 1rem;
+    }
+
+    .branding-animation>div>div {
+      padding: 0.25rem 0.95rem;
+      height: 2.81rem;
+      margin-bottom: 2.81rem;
+      display: inline-block;
+    }
+
+    .branding-animation div:first-child {
+      animation: text-animation 8s infinite;
+    }
+
+    .first-animation div {
+      background-color: #20a7d81e;
+    }
+
+    .second-animation div {
+      background-color: #20a7d81e;
+
+    }
+
+    .third-animation div {
+      background-color: #20a7d81e;
+
+    }
   }
 
-  
-  .branding-animation {
-    height: 40px;
-    overflow: hidden;
-    margin-left: 1rem;
-  }
-  
-  .branding-animation>div>div {
-    padding: 0.25rem 0.95rem;
-    height: 2.81rem;
-    margin-bottom: 2.81rem;
-    display: inline-block;
-  }
-  
-  .branding-animation div:first-child {
-    animation: text-animation 8s infinite;
-  }
-  
-  .first-animation div {
-    background-color: #20a7d81e;
-  }
-  
-  .second-animation div {
-    background-color: #20a7d81e;
-    
-  }
-  
-  .third-animation div {
-    background-color: #20a7d81e;
-    
-  }
-}
-  h1{
+  h1 {
     font-size: 40px;
   }
-  h2{
+
+  h2 {
     font-size: 30px;
   }
-  a{
+
+  a {
     font-size: 20px;
     background-color: transparent;
     padding: 10px;
@@ -68,12 +73,13 @@
     text-decoration: none;
     border-radius: 5px;
   }
-  a:hover{
+
+  a:hover {
     background-color: $tertiary-color;
     color: $secondary-color;
     cursor: pointer;
     transition: background-color 0.8s ease-in-out;
-}
+  }
 }
 
 @keyframes text-animation {

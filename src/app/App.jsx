@@ -14,7 +14,7 @@ function App() {
     <>
       <Header />
       <main>
-        <section id="branding"className="branding">
+        <section id="branding" className="branding">
           <Branding />
         </section>
         <section id="profil" className="profil">
@@ -28,27 +28,27 @@ function App() {
         </section>
         <section className="carousel">
           <Carousel />
-
         </section>
         <section id="portfolio" className="portfolio">
-        <div className="portfolio-container">
-        <h3>Portfolio</h3>
-        <div className="portfolio-card">
-          {Porfoliocards.map((item, index) => (
-          <Portfolio key={index}
-          title={item.title}
-          description={item.description}
-          logos={item.logos}
-          image={item.image}
-          links={item.links}
-          />
-          ))}
-          </div>
+          <div className="portfolio-container">
+            <h3>Portfolio</h3>
+            <div className="portfolio-card">
+              {Porfoliocards.map((item, index) => (
+                <Portfolio
+                  key={index}
+                  title={item.title}
+                  description={item.description}
+                  logos={item.logos}
+                  image={item.image}
+                  links={item.links}
+                />
+              ))}
+            </div>
           </div>
         </section>
         <section id="contact" className="contact">
-        <h3>Contactez-moi</h3>
-        <p>Je vous répondrai dans les plus brefs délais.</p>
+          <h3>Contactez-moi</h3>
+          <p>Je vous répondrai dans les plus brefs délais.</p>
 
           <Contact />
         </section>
