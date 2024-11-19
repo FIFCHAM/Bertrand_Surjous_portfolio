@@ -11,7 +11,7 @@ function Header() {
       </a>
         <ul>
           <li>
-            <a href="#branding">A propos</a>
+            <a href="#branding">À propos</a>
           </li>
           <li>
             <a href="#profil">Profil</a>

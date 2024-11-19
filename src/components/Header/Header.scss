@@ -23,10 +23,12 @@ Header {
                 list-style: none;
                 a {
                     text-decoration: none;
-                    font-family: fantasy;
                     font-size: 20px;
                     color: $primary-color;
                     cursor: pointer;
+                }
+                a:hover{
+                    color: $tertiary-color;
                 }
             }
         }
