@@ -8,7 +8,7 @@ function Skills() {
 
   return (
     <div className="skills-container">
-      <h3>Compétences </h3>
+      <h3 className="section-title">Compétences </h3>
       <div className="skills-logo">
         {Skillslogos.map((skill) => (
           <div key={skill.name} className="logo-container">

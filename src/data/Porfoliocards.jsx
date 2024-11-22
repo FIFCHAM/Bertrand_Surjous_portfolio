@@ -14,7 +14,7 @@ export const Porfoliocards = [
     logos: [htmllogo, csslogo],
     links: [
       {
-        title: "lien github",
+        title: " github",
         link: "https://github.com/FIFCHAM/Projet_openclassrooms_Omyfood",
       },
       {
@@ -32,7 +32,7 @@ export const Porfoliocards = [
     logos: [javascriptlogo],
     links: [
       {
-        title: "lien github",
+        title: " github",
         link: "https://github.com/FIFCHAM/Projet_openclassrooms_Sophie_bluel",
       },
     ],
@@ -46,7 +46,7 @@ export const Porfoliocards = [
     logos: [reactlogo],
     links: [
       {
-        title: "lien github",
+        title: " github",
         link: "https://github.com/FIFCHAM/Projet_openclassrooms_kaza",
       },
       {

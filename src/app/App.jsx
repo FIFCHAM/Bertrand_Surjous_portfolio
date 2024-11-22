@@ -31,7 +31,7 @@ function App() {
         </section>
         <section id="portfolio" className="portfolio">
           <div className="portfolio-container">
-            <h3>Portfolio</h3>
+            <h3 className="section-title">Portfolio</h3>
             <div className="portfolio-card">
               {Porfoliocards.map((item, index) => (
                 <Portfolio
@@ -47,7 +47,7 @@ function App() {
           </div>
         </section>
         <section id="contact" className="contact">
-          <h3>Contactez-moi</h3>
+          <h3 className="section-title">Contactez-moi</h3>
           <p>Je vous répondrai dans les plus brefs délais.</p>
 
           <Contact />

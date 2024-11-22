@@ -4,7 +4,7 @@ import photobs from "../../assets/images/porfolio_img_profil.webp";
 function Profil() {
   return (
     <div className="profil-container">
-      <h3>À propos de moi</h3>
+      <h3 className="section-title">À propos de moi</h3>
 
       <img src={photobs} alt="photo bs" />
       <p>

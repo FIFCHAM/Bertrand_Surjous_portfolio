@@ -4,8 +4,8 @@ function Portfolio({ title, description, logos, image, links }) {
   return (
     <>
       <div className="portfolio-card-container">
-        <h4>{title}</h4>
         <img src={image} className="portfolio-image" alt={title} />
+          <h4>{title}</h4>
         <p>{description}</p>
         <div className="porfolio-skilllogos">
           {logos.map((logos, index) => (
