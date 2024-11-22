@@ -3,7 +3,7 @@ import { Skillslogos } from "../../data/Skillslogos";
 
 function Skills() {
   const handlePdfClick = () => {
-    window.open(`/CV BERTRAND.pdf`, "_blank");
+    window.open("/CV_2024-11-20_BERTRAND_SURJOUS.pdf", "_blank");
   };
 
   return (
