@@ -16,6 +16,14 @@
         border-radius: 50%;
         object-fit: cover;
     }
+    @media (max-width: 560px) {
+        img {
+            width: 150px;
+            height: 150px;
+            
+        }
+        
+    }
 
     p {
         font-size: 25px;

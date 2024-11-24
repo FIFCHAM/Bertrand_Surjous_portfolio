@@ -22,6 +22,19 @@
         margin-bottom: 20px;
         text-align: center;
     }
+    @media (max-width: 500px) {
+        p {
+            font-size: 28px;
+            margin-bottom: 10px;
+
+        }
+        p:first-child {
+            font-size: 25px;
+            margin-bottom: 30px;
+
+        }
+        
+    }
 
     .fa-chevron {
         display: flex;
@@ -38,6 +51,13 @@
         i:hover {
             color: $tertiary-color;
         }
+    }
+    @media (max-width: 500px) {
+        .fa-chevron {
+            display: none;
+
+        }
+        
     }
 
     .bullets {

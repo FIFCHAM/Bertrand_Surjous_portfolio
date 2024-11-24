@@ -19,3 +19,12 @@
         text-align: center;
     }
 }
+@media (max-width: 560px) {
+    .status-container {
+        p {
+            font-size: 25px;
+            
+        }
+        
+    }
+}

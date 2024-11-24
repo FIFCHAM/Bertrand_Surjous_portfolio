@@ -16,3 +16,8 @@ body {
         font-family: sans-serif;
 
 }
+@media (max-width: 560px) {
+    .section-title {
+        font-size: 35px;
+    }
+}
