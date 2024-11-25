@@ -10,6 +10,10 @@
   margin-bottom: 50px;
   color: $primary-color;
   font-family: sans-serif;
+  border-radius: 5px;
+  border: 2px solid $tertiary-color;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   h4 {
     font-size: 25px;
@@ -70,11 +74,11 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  
+
   @media screen and (max-width: 768px) {
     flex-direction: column;
   }
-  
+
   a {
     font-family: sans-serif;
     color: $tertiary-color;
@@ -83,7 +87,8 @@
     border: 2px solid $tertiary-color;
     border-radius: 5px;
   }
-  a:active{
+
+  a:active {
     transform: scale(0.9);
     transition: all 0.5s ease-in-out;
   }
