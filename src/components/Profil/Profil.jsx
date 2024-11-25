@@ -1,5 +1,5 @@
 import "./profil.scss";
-import photobs from "../../assets/images/porfolio_img_profil.webp";
+import photobs from "../../assets/images/photoprofil.jpg";
 
 function Profil() {
   return (

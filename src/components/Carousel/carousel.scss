@@ -1,6 +1,6 @@
 @import '../../styles/_variables.scss';
 
-.carousel-container {
+/*.carousel-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,6 +8,18 @@
     width: 100%;
     color: $primary-color;
     margin-top: 50px;
+*/
+.quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: $primary-color;
+    margin-top: 50px;
+    position: relative;
+    z-index: 1;
+    transition: all 0.4s ease-in-out;
 
     p {
         font-family: sans-serif;
@@ -22,25 +34,23 @@
         margin-bottom: 20px;
         text-align: center;
     }
-    @media (max-width: 500px) {
-        p {
-            font-size: 28px;
-            margin-bottom: 10px;
 
-        }
-        p:first-child {
-            font-size: 25px;
-            margin-bottom: 30px;
-
-        }
-        
+    &.fade-in {
+        opacity: 1;
+        transform: translateX(0);
     }
 
+    &.fade-out {
+        opacity: 0;
+        transform: translateX(-5px);
+    }
+
+    
     .fa-chevron {
         display: flex;
         justify-content: space-between;
         width: 95%;
-
+        
         i {
             font-size: 40px;
             color: $primary-color;
@@ -52,12 +62,13 @@
             color: $tertiary-color;
         }
     }
+
     @media (max-width: 500px) {
         .fa-chevron {
             display: none;
 
         }
-        
+
     }
 
     .bullets {
@@ -82,3 +93,19 @@
     }
 
 }
+            @media (max-width: 500px) {
+                .quote {
+                    p {
+                        font-size: 28px;
+                        margin-bottom: 10px;
+        
+                    }
+        
+                    p:first-child {
+                        font-size: 25px;
+                        margin-bottom: 30px;
+        
+                    }
+        
+                }
+            }
