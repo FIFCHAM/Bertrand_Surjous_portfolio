@@ -30,13 +30,13 @@ function Carousel() {
   };
 
   // Fonction pour sélectionner une citation avec les bullets
-  const handleBulletClick = (index) => {
+ /* const handleBulletClick = (index) => {
     setIsTransitioning(true);
     setTimeout(() => {
       setCurrentIndex(index);
       setIsTransitioning(false);
     }, 500);
-  };
+  };*/
 
   return (
     <div
@@ -64,12 +64,17 @@ function Carousel() {
           <span
           key={index}
           className={`bullet ${index === currentIndex ? "active" : ""}`}
-          onClick={() => handleBulletClick(index)}
+          //onClick={() => handleBulletClick(index)}
+          onClick={() => {
+            const offset = carouselRef.current.offsetWidth * index;
+            carouselRef.current.scrollTo({ left: offset, behavior: "smooth" });
+            setCurrentIndex(index);
+          }}
           />
         ))}
       </div>
-        </div>
     </div>
+        </div>
     
     
     
