@@ -1,19 +1,25 @@
 @import '../../styles/_variables.scss';
 
-/*.carousel-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: $primary-color;
-    margin-top: 50px;
-*/
+/*.carousel-container{
+    position: relative;
+}
 .carousel-track {
     display: flex;
     overflow-x: scroll; // Activer le défilement horizontal
     scroll-snap-type: x mandatory; // Activer le snap au centre
     -webkit-overflow-scrolling: touch; // Smooth scroll sur mobile
+    
+    
+    
+    @media (min-width: 768px) {
+        .fa-chevron {
+            display: flex;
+        }
+
+        .carousel-track {
+            overflow-x: hidden; // Désactiver le scroll horizontal
+        }
+    }
     .quote {
         display: flex;
         flex-direction: column;
@@ -23,67 +29,69 @@
         color: $primary-color;
         margin-top: 50px;
         position: relative;
-    z-index: 1;
-    transition: all 0.4s ease-in-out;
-    scroll-behavior: smooth;
-    scrollbar-width: none;
-  &::-webkit-scrollbar {
-    display: none; // Désactiver l'affichage de la scrollbar (Chrome, Safari)
-  }
+        z-index: 1;
+        transition: all 0.4s ease-in-out;
+        scroll-behavior: smooth;
+        scrollbar-width: none;
 
-    p {
-        font-family: sans-serif;
-        font-size: 45px;
-        margin: 0;
-        align-items: center;
+        &::-webkit-scrollbar {
+            display: none; // Désactiver l'affichage de la scrollbar (Chrome, Safari)
+        }
+
+
+        p {
+            font-family: sans-serif;
+            font-size: 45px;
+            margin: 0;
+            align-items: center;
+        }
+
+        p:first-child {
+            font-size: 35px;
+            margin: 0;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        &.fade-in {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        &.fade-out {
+            opacity: 0;
+            transform: translateX(-5px);
+        }
+
+        .fa-chevron {
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+
+            i {
+                font-size: 40px;
+                color: $primary-color;
+                cursor: pointer;
+                transition: color 0.3s;
+            }
+
+            i:hover {
+                color: $tertiary-color;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .fa-chevron i {
+                font-size: 25px;
+
+
+            }
+
+        }
     }
 
-    p:first-child {
-        font-size: 35px;
-        margin: 0;
-        margin-bottom: 20px;
-        text-align: center;
-    }
-
-    &.fade-in {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    &.fade-out {
-        opacity: 0;
-        transform: translateX(-5px);
-    }
-    
-    .fa-chevron {
+    .bullets {
         display: flex;
-        justify-content: space-between;
-        width: 95%;
-        
-        i {
-            font-size: 40px;
-            color: $primary-color;
-            cursor: pointer;
-            transition: color 0.3s;
-        }
-        
-        i:hover {
-            color: $tertiary-color;
-        }
-    }
-    
-    @media (max-width: 500px) {
-        .fa-chevron i{
-            font-size: 25px;
-            
-            
-        }
-        
-    }
-}
-
-.bullets {
-    display: flex;
         justify-content: center;
         margin-top: 15px;
         margin-bottom: 50px;
@@ -108,25 +116,119 @@
             p {
                 font-size: 28px;
                 margin-bottom: 10px;
-                
+
             }
-            
+
             p:first-child {
                 font-size: 25px;
                 margin-bottom: 30px;
-                
+
             }
-            
+
         }
     }
-    @media (min-width: 768px) {
-        .fa-chevron {
-          display: flex;
-        }
-    
-        .carousel-track {
-          overflow-x: hidden; // Désactiver le scroll horizontal
-        }
-      }
-    
+
+}*/
+.carousel-container {
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+
+    .quote {
+        flex: 0 0 100%; // Chaque slide prend toute la largeur
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        scroll-snap-align: center; // Alignement au centre
+        transition: transform 0.4s ease-in-out;
+        color: $primary-color;
+        margin-top: 50px;
     }
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.quote-author {
+    font-family: sans-serif;
+    font-size: 45px;
+    margin: 0;
+    align-items: center;
+}
+
+.quote-text:first-child {
+    font-size: 35px;
+    margin: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+@media (max-width: 500px) {
+    .quote {
+        p {
+            font-size: 28px;
+            margin-bottom: 10px;
+
+        }
+
+        p:first-child {
+            font-size: 25px;
+            margin-bottom: 30px;
+
+        }
+
+    }
+}
+
+.fa-chevron {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    i {
+        margin-left: 20px;
+        margin-right: 20px;
+        pointer-events: all;
+        font-size: 40px;
+        cursor: pointer;
+        color: $primary-color;
+        transition: color 0.3s;
+    }
+
+    i:hover {
+        color: $tertiary-color;
+    }
+}
+
+.bullets {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-bottom: 50px;
+
+    .bullet {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: $secondary-color;
+        margin: 0 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+
+        &.active {
+            background-color: $primary-color;
+        }
+    }
+}
