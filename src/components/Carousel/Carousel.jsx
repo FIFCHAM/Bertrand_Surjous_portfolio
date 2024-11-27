@@ -1,9 +1,10 @@
 import "./carousel.scss";
 import { Famousquotes } from "../../data/Famousquotes";
-import { useState } from "react";
+import { useState ,useRef} from "react";
 
 function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const carouselRef = useRef(null);
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   // Fonction pour changer de citation
@@ -38,6 +39,15 @@ function Carousel() {
   };
 
   return (
+    <div
+        className="carousel-track"
+        ref={carouselRef}
+        onScroll={(e) => {
+          const { scrollLeft, offsetWidth } = e.target;
+          const newIndex = Math.round(scrollLeft / offsetWidth);
+          setCurrentIndex(newIndex);
+        }}
+      >
     
     <div className={`quote ${isTransitioning ? "fade-out" : "fade-in"}`}>
 
@@ -52,12 +62,13 @@ function Carousel() {
       <div className="bullets">
         {Famousquotes.map((_, index) => (
           <span
-            key={index}
-            className={`bullet ${index === currentIndex ? "active" : ""}`}
-            onClick={() => handleBulletClick(index)}
+          key={index}
+          className={`bullet ${index === currentIndex ? "active" : ""}`}
+          onClick={() => handleBulletClick(index)}
           />
         ))}
       </div>
+        </div>
     </div>
     
     

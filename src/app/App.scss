@@ -50,10 +50,7 @@
   background-image: url("../assets/images/background-with-blue-neon-lights2.webp");
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none;
-  &::-webkit-scrollbar {
-    display: none; // Désactiver l'affichage de la scrollbar (Chrome, Safari)
-  }
+  
 }
 
 .porfolio {

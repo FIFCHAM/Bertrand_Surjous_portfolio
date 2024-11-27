@@ -9,17 +9,27 @@
     color: $primary-color;
     margin-top: 50px;
 */
-.quote {
+.carousel-track {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    color: $primary-color;
-    margin-top: 50px;
-    position: relative;
+    overflow-x: scroll; // Activer le défilement horizontal
+    scroll-snap-type: x mandatory; // Activer le snap au centre
+    -webkit-overflow-scrolling: touch; // Smooth scroll sur mobile
+    .quote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        color: $primary-color;
+        margin-top: 50px;
+        position: relative;
     z-index: 1;
     transition: all 0.4s ease-in-out;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none; // Désactiver l'affichage de la scrollbar (Chrome, Safari)
+  }
 
     p {
         font-family: sans-serif;
@@ -44,7 +54,6 @@
         opacity: 0;
         transform: translateX(-5px);
     }
-
     
     .fa-chevron {
         display: flex;
@@ -57,22 +66,24 @@
             cursor: pointer;
             transition: color 0.3s;
         }
-
+        
         i:hover {
             color: $tertiary-color;
         }
     }
-
+    
     @media (max-width: 500px) {
-        .fa-chevron {
-            display: none;
-
+        .fa-chevron i{
+            font-size: 25px;
+            
+            
         }
-
+        
     }
+}
 
-    .bullets {
-        display: flex;
+.bullets {
+    display: flex;
         justify-content: center;
         margin-top: 15px;
         margin-bottom: 50px;
@@ -92,20 +103,30 @@
         }
     }
 
-}
-            @media (max-width: 500px) {
-                .quote {
-                    p {
-                        font-size: 28px;
-                        margin-bottom: 10px;
-        
-                    }
-        
-                    p:first-child {
-                        font-size: 25px;
-                        margin-bottom: 30px;
-        
-                    }
-        
-                }
+    @media (max-width: 500px) {
+        .quote {
+            p {
+                font-size: 28px;
+                margin-bottom: 10px;
+                
             }
+            
+            p:first-child {
+                font-size: 25px;
+                margin-bottom: 30px;
+                
+            }
+            
+        }
+    }
+    @media (min-width: 768px) {
+        .fa-chevron {
+          display: flex;
+        }
+    
+        .carousel-track {
+          overflow-x: hidden; // Désactiver le scroll horizontal
+        }
+      }
+    
+    }
